@@ -8,3 +8,16 @@ assets = { directory = "node_modules/r2-explorer/dashboard", binding = "ASSETS",
 [[r2_buckets]]
 binding = "BUCKET"
 bucket_name = "bucket"
+
+# observability config
+[observability]
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+persist = true
+
+[observability.traces]
+enabled = false
+persist = true
+head_sampling_rate = 1
